@@ -17,3 +17,18 @@ const affiche_image_2 = images[indicealeatoire2];
 
 document.getElementById("img2").src = affiche_image_2;
 
+//  condition
+
+if (indicealeatoire1 > indicealeatoire2) {
+    // si le joueur 1 gagne la partie
+    const joueur1 = document.getElementById('resultat');
+    joueur1.textContent = "Victoire du joueur 1 🤭";
+} else if (indicealeatoire1 < indicealeatoire2) {
+    // si le joueur 2 gagne la partie
+    const joueur2 = document.getElementById('resultat');
+    joueur2.textContent = "Victoire du joueur 2 😁";
+} else {
+    // si il y a égalité
+    const joueur3 = document.getElementById('resultat');
+    joueur3.textContent = "Egalité Parfaite 🫡";
+}
